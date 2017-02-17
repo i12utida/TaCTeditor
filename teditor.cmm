@@ -1,0 +1,309 @@
+
+/*
+ * 17/1/27 解決済み
+ * ファイル読み込み時に
+ * 一行多く添字がカウントされてしまう
+ * バグが存在しています
+ */
+
+#include <stdio.hmm>
+#include <stdlib.hmm>
+#include <string.hmm>
+#include <crt0.hmm>
+#include <ctype.hmm>
+
+#define EOF -1          /* EOFの定義 */
+
+#define LINES 200       /* 編集できる文書は最大で200行 */
+#define CHARS 81        /* 編集できる文字は最大で80文字 */
+
+#define COMLEN 9      /* ファイル名や命令の長さは最大9文字まで文字以内 */
+
+//#define DB
+
+/* *********デバッグ用変数********** */
+/* ********************************* */
+
+
+/*
+ * static変数
+ */
+char[][] textbuf = array(LINES,CHARS);      // 文書を記憶するバッファ
+char[] buf = array(CHARS);                  // 1行を記憶する配列
+char[] cc = array(2);
+int line;                                   // 文書の行数
+int cl;                                     // 現在何行目にいるか
+int kbd_cnt;                                // キーボードを入力した回数
+boolean newfile;                            // 新しくファイルを作ったらtrue
+boolean eofflag;                            // EOFがきたらtrue
+FILE fp;                                    //ファイル型を宣言
+
+/* ******************デバッグ用に使用 ******************** */
+#ifdef DB
+
+// char型二次元配列を出力
+void printText(char[][] str) {
+     int i;
+     for(i = 0; i < line; i = i + 1) {
+         printf(" Debug printText line = L%02d, str = *%s*\n ",i+1,str[i]);
+     }
+ }
+
+// char型一次元配列を出力
+void printString(char[] str){
+    printf("Debug printString str = *%s*\n",str);
+}
+
+// char型一次元配列のi番目を出力
+void printStringChar(char[] str,int i){
+    printf("Debug printStringChar str = *%c*\n",str[i]);
+}
+
+// char型を出力
+void printChar(char c){
+    printf("Debug printChar c = *%c*\n",c);
+}
+
+// 行のステータス
+void printLine(){
+    printf("Line = %d, Current Line = %d\n",line,cl);
+}
+
+// キーボードのステータス
+void printKbd(){
+    printf("kbd_cnt = %d\n",kbd_cnt);
+}
+
+#endif
+/* ******************************************************* */
+
+
+/*
+ *  文字列10進を整数型10進に変換する。
+ */
+int translate(char[] s) {
+    int v=0, i=0;
+    for( ; isSpace(s[i]); i=i+1)
+        ;
+    for( ; isDigit(s[i]); i=i+1) {
+        int d=ord(s[i])-ord('0');
+        v=v*10+d;
+    }
+
+    return v;
+}
+
+void getLine(char[] buf,int buflen,FILE fp){
+    #ifdef DB
+        printf("getLine\n");
+    #endif
+    char c;                                     // 文字を格納する領域
+    eofflag = false;
+
+    for(kbd_cnt = 0; kbd_cnt < buflen-1; kbd_cnt = kbd_cnt+1){          // buflen-1は'\0'の領域を確保するため
+        eofflag = feof(fp);                     // EOFかチェック
+        if(eofflag == true){                    // EOFなら
+            break;                              // 読み込み終了
+        } else {
+            c = fgetc(fp);                      // 文字を取ってくる
+            #ifdef DB
+                printKbd();
+                printChar(c);
+            #endif
+            buf[kbd_cnt] = c;                   // bufに1文字格納する
+            if( c == '\n') {                    // 改行なら
+                break;                          // 一行読み込み終了
+            }
+        }
+    }
+    
+    buf[kbd_cnt] = '\0';                              // 文字列を完成させる
+    
+    #ifdef DB
+        printString(textbuf[line-1]);
+    #endif
+}
+
+
+void loadFile(char[] filename) {
+    #ifdef DB
+        printf("start loadFile\n");
+    #endif
+    fp = fopen(filename,"r");                       // ファイルをreadモードで開く
+    line = 1;                                       // 1行目から始める
+    cl = 1;
+
+    if(fp == null){                                 /* 新規作成なら */
+        newfile = true;                             // 新しくファイルを作った目印
+        printf("%s is created.\n", filename);       // 画面出力
+    } else {                                        /* 読み込みなら */
+        printf("%s is loaded.\n", filename);        // 画面出力
+        for(cl = 1; eofflag != true; cl = cl+1) {   // eofになるまで繰り返す
+            getLine(textbuf[line-1],CHARS,fp);                      // textbufに1行を読み込む
+            line = line + 1;                        // 1行増加
+        }
+
+        line = line - 1;                            // EOFが単体で検出されるので読み込みの場合は引く
+        cl = cl - 1;                                // EOFが単体で検出されるので読み込みの場合は引く
+        
+        #ifdef DB
+            int i;
+            for(i = 1; i < line; i = i+1)
+                printf("debug *%s*\n",textbuf[i-1]);
+            printText(textbuf);
+        #endif
+    }
+
+}
+
+
+void printAll(){
+    int i;
+    printf("/****************************************************************/\n");
+
+    for(i = 1; i < line; i = i+1) {
+        printf("L%03d:",i);                     // 行数を出力
+        printf("%s\n",textbuf[i-1]);            // テキストを1行出力
+        if(i==25||i==50||i==75||i==100||i==125||i==150||i==175){      // 25,50,75行まで出力したとき
+            while(true){                        // 改行が押されるまで
+                fgetc(stdin);                   // キーボードから入力
+                break;                          // 出力の続きへ
+            }
+        }
+    }
+
+    printf("/****************************************************************/\n");
+}
+
+/*
+ * 操作方法を表示
+ */
+void help() {
+    printf("Teditor has these commands.\n");
+    printf("i : insert words\n");
+    printf("q : quit teditor\n");
+    printf("j : jump to line which you select\n");
+    printf("c : overrides the one line\n");
+    printf("d : delete line\n");
+    printf("p : print line\n");
+    printf("print all : print all lines\n");
+}
+
+void insert(){
+    int i;
+    #ifdef DB
+        printLine();
+    #endif
+    for(i = line-1; i > cl-1; i = i-1){
+        #ifdef DB
+            printf("i = %d\n",i);
+            printLine();
+        #endif
+        strCpy(textbuf[i], textbuf[i-1]);
+    }
+    printf("Type new content.\n");      // 新しい行の挿入
+    getLine(textbuf[cl-1],CHARS,stdin);   // 新しい内容を入力する
+    #ifdef DB
+        printLine();
+        printString(textbuf[cl-1]);
+    #endif
+    line = line + 1;                    // 合計行数を増やす
+    cl = cl + 1;                        // 現在の行を進める
+    printAll();                         // テキスト内容を出力
+}
+
+/*
+ * ファイルを保存する関数
+ */
+void savefile(char[] filename) {
+    int i;
+    FILE fp;                            /* ファイルポインタ */
+    fp=fopen(filename,"w");             /* ファイルをWriteモードで開く */
+
+    if (fp==null) {                     /* オープン失敗 */
+        printf("Can't save file!!");
+        return;
+    }
+
+    for (i = 0; i < line-1; i = i+1){
+        #ifdef DB
+            printString(textbuf[i]);
+        #endif
+        fprintf(fp,"%s\n",textbuf[i]);
+    }
+    printf("Saved %s\n",filename);
+    fclose(fp);
+}
+
+void jump(){
+    char[] num = malloc(sizeof(char)*COMLEN);
+    printf("Jump to?\n");
+    getLine(num,COMLEN,stdin);              /* 何行目にジャンプするか入力 */
+    cl = translate(num);                    /* 文字列10進を整数型10進に変換*/
+    if (cl<0) cl=1;                             // 0以下なら1行目に飛ぶ
+    if (cl>line) cl=line;                      // 合計行数以上なら最終行に飛ぶ
+    free(num);
+}
+
+void delete(){
+    int i;
+    if (cl != line) {                           // 現在行が最終行にない場合
+        for (i=cl; i<=line-1; i=i+1)
+            strCpy(textbuf[i-1], textbuf[i]);   // テキストを1行ずつ後ろにずらす
+        line = line - 1;                        // 1行消したので減らす
+        printAll();                             // 削除後のテキスト表示
+    } else
+        printf("The current line is just after final line.\n");
+}
+
+void change(){
+    if (cl != line) {
+        printf("%s\n",textbuf[cl-1]);            /* 現在の行の内容を出力 */
+        printf("Type new content.\n");
+        getLine(textbuf[cl-1],CHARS,stdin);    /* 新しい内容を入力する */
+    } else
+        printf("nothing to change.\n");
+}
+
+
+public int main(int argc,char[][] argv) {
+    char[] command = malloc(sizeof(char)*COMLEN);   // char型配列をint型配列に変換 */
+    loadFile(argv[1]);                              // ファイルを読み込む */
+    #ifdef DB
+        printLine();
+    #endif
+    
+    while(true){
+        printf("[%d] Please type command.\n", cl); // コマンド入力画面の出力
+        getLine(command,COMLEN,stdin);          /* commandにeofが入力されているか調べ、endflagに数値を代入 */
+
+        #ifdef DB
+            printf("command[0] = %c\n",command[0]);
+        #endif
+        if (eofflag==true){  /* EOFなら終了 */
+            #ifdef DB
+                printf("end with eof\n");
+            #endif
+            break;
+        } else if (strCmp(command,"i")==0) {    /* i: 1行挿入コマンンド */
+            insert();
+        } else if (strCmp(command,"p")==0) {    /* p: print */
+            printAll();
+        } else if (strCmp(command,"h")==0 || command[0] == '\0') { // hか'\n': helpを出力
+            help();
+        } else if (strCmp(command,"q")==0) {    // q: 保存・終了
+            savefile(argv[1]);
+            break;
+        } else if (strCmp(command,"j")==0) {    // j: ジャンプ
+            jump();
+        } else if (strCmp(command,"d")==0) {    // d: 削除
+            delete();
+        } else if (strCmp(command,"c")==0) {    // c: 行変更
+            change();
+        } else {
+            printf("Unknown command\n");
+        }
+    }
+    printAll();
+    return 0;
+}

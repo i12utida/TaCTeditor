@@ -1,0 +1,1385 @@
+_stdin
+	WS	1
+_stdout
+	WS	1
+_stderr
+	WS	1
+__alcAddr
+	WS	1
+.L1
+	BS	81
+.L2
+	BS	81
+.L3
+	BS	81
+.L4
+	BS	81
+.L5
+	BS	81
+.L6
+	BS	81
+.L7
+	BS	81
+.L8
+	BS	81
+.L9
+	BS	81
+.L10
+	BS	81
+.L11
+	BS	81
+.L12
+	BS	81
+.L13
+	BS	81
+.L14
+	BS	81
+.L15
+	BS	81
+.L16
+	BS	81
+.L17
+	BS	81
+.L18
+	BS	81
+.L19
+	BS	81
+.L20
+	BS	81
+.L21
+	BS	81
+.L22
+	BS	81
+.L23
+	BS	81
+.L24
+	BS	81
+.L25
+	BS	81
+.L26
+	BS	81
+.L27
+	BS	81
+.L28
+	BS	81
+.L29
+	BS	81
+.L30
+	BS	81
+.L31
+	BS	81
+.L32
+	BS	81
+.L33
+	BS	81
+.L34
+	BS	81
+.L35
+	BS	81
+.L36
+	BS	81
+.L37
+	BS	81
+.L38
+	BS	81
+.L39
+	BS	81
+.L40
+	BS	81
+.L41
+	BS	81
+.L42
+	BS	81
+.L43
+	BS	81
+.L44
+	BS	81
+.L45
+	BS	81
+.L46
+	BS	81
+.L47
+	BS	81
+.L48
+	BS	81
+.L49
+	BS	81
+.L50
+	BS	81
+.L51
+	BS	81
+.L52
+	BS	81
+.L53
+	BS	81
+.L54
+	BS	81
+.L55
+	BS	81
+.L56
+	BS	81
+.L57
+	BS	81
+.L58
+	BS	81
+.L59
+	BS	81
+.L60
+	BS	81
+.L61
+	BS	81
+.L62
+	BS	81
+.L63
+	BS	81
+.L64
+	BS	81
+.L65
+	BS	81
+.L66
+	BS	81
+.L67
+	BS	81
+.L68
+	BS	81
+.L69
+	BS	81
+.L70
+	BS	81
+.L71
+	BS	81
+.L72
+	BS	81
+.L73
+	BS	81
+.L74
+	BS	81
+.L75
+	BS	81
+.L76
+	BS	81
+.L77
+	BS	81
+.L78
+	BS	81
+.L79
+	BS	81
+.L80
+	BS	81
+.L81
+	BS	81
+.L82
+	BS	81
+.L83
+	BS	81
+.L84
+	BS	81
+.L85
+	BS	81
+.L86
+	BS	81
+.L87
+	BS	81
+.L88
+	BS	81
+.L89
+	BS	81
+.L90
+	BS	81
+.L91
+	BS	81
+.L92
+	BS	81
+.L93
+	BS	81
+.L94
+	BS	81
+.L95
+	BS	81
+.L96
+	BS	81
+.L97
+	BS	81
+.L98
+	BS	81
+.L99
+	BS	81
+.L100
+	BS	81
+.L101
+	BS	81
+.L102
+	BS	81
+.L103
+	BS	81
+.L104
+	BS	81
+.L105
+	BS	81
+.L106
+	BS	81
+.L107
+	BS	81
+.L108
+	BS	81
+.L109
+	BS	81
+.L110
+	BS	81
+.L111
+	BS	81
+.L112
+	BS	81
+.L113
+	BS	81
+.L114
+	BS	81
+.L115
+	BS	81
+.L116
+	BS	81
+.L117
+	BS	81
+.L118
+	BS	81
+.L119
+	BS	81
+.L120
+	BS	81
+.L121
+	BS	81
+.L122
+	BS	81
+.L123
+	BS	81
+.L124
+	BS	81
+.L125
+	BS	81
+.L126
+	BS	81
+.L127
+	BS	81
+.L128
+	BS	81
+.L129
+	BS	81
+.L130
+	BS	81
+.L131
+	BS	81
+.L132
+	BS	81
+.L133
+	BS	81
+.L134
+	BS	81
+.L135
+	BS	81
+.L136
+	BS	81
+.L137
+	BS	81
+.L138
+	BS	81
+.L139
+	BS	81
+.L140
+	BS	81
+.L141
+	BS	81
+.L142
+	BS	81
+.L143
+	BS	81
+.L144
+	BS	81
+.L145
+	BS	81
+.L146
+	BS	81
+.L147
+	BS	81
+.L148
+	BS	81
+.L149
+	BS	81
+.L150
+	BS	81
+.L151
+	BS	81
+.L152
+	BS	81
+.L153
+	BS	81
+.L154
+	BS	81
+.L155
+	BS	81
+.L156
+	BS	81
+.L157
+	BS	81
+.L158
+	BS	81
+.L159
+	BS	81
+.L160
+	BS	81
+.L161
+	BS	81
+.L162
+	BS	81
+.L163
+	BS	81
+.L164
+	BS	81
+.L165
+	BS	81
+.L166
+	BS	81
+.L167
+	BS	81
+.L168
+	BS	81
+.L169
+	BS	81
+.L170
+	BS	81
+.L171
+	BS	81
+.L172
+	BS	81
+.L173
+	BS	81
+.L174
+	BS	81
+.L175
+	BS	81
+.L176
+	BS	81
+.L177
+	BS	81
+.L178
+	BS	81
+.L179
+	BS	81
+.L180
+	BS	81
+.L181
+	BS	81
+.L182
+	BS	81
+.L183
+	BS	81
+.L184
+	BS	81
+.L185
+	BS	81
+.L186
+	BS	81
+.L187
+	BS	81
+.L188
+	BS	81
+.L189
+	BS	81
+.L190
+	BS	81
+.L191
+	BS	81
+.L192
+	BS	81
+.L193
+	BS	81
+.L194
+	BS	81
+.L195
+	BS	81
+.L196
+	BS	81
+.L197
+	BS	81
+.L198
+	BS	81
+.L199
+	BS	81
+.L200
+	BS	81
+.L201
+	DW	.L1
+	DW	.L2
+	DW	.L3
+	DW	.L4
+	DW	.L5
+	DW	.L6
+	DW	.L7
+	DW	.L8
+	DW	.L9
+	DW	.L10
+	DW	.L11
+	DW	.L12
+	DW	.L13
+	DW	.L14
+	DW	.L15
+	DW	.L16
+	DW	.L17
+	DW	.L18
+	DW	.L19
+	DW	.L20
+	DW	.L21
+	DW	.L22
+	DW	.L23
+	DW	.L24
+	DW	.L25
+	DW	.L26
+	DW	.L27
+	DW	.L28
+	DW	.L29
+	DW	.L30
+	DW	.L31
+	DW	.L32
+	DW	.L33
+	DW	.L34
+	DW	.L35
+	DW	.L36
+	DW	.L37
+	DW	.L38
+	DW	.L39
+	DW	.L40
+	DW	.L41
+	DW	.L42
+	DW	.L43
+	DW	.L44
+	DW	.L45
+	DW	.L46
+	DW	.L47
+	DW	.L48
+	DW	.L49
+	DW	.L50
+	DW	.L51
+	DW	.L52
+	DW	.L53
+	DW	.L54
+	DW	.L55
+	DW	.L56
+	DW	.L57
+	DW	.L58
+	DW	.L59
+	DW	.L60
+	DW	.L61
+	DW	.L62
+	DW	.L63
+	DW	.L64
+	DW	.L65
+	DW	.L66
+	DW	.L67
+	DW	.L68
+	DW	.L69
+	DW	.L70
+	DW	.L71
+	DW	.L72
+	DW	.L73
+	DW	.L74
+	DW	.L75
+	DW	.L76
+	DW	.L77
+	DW	.L78
+	DW	.L79
+	DW	.L80
+	DW	.L81
+	DW	.L82
+	DW	.L83
+	DW	.L84
+	DW	.L85
+	DW	.L86
+	DW	.L87
+	DW	.L88
+	DW	.L89
+	DW	.L90
+	DW	.L91
+	DW	.L92
+	DW	.L93
+	DW	.L94
+	DW	.L95
+	DW	.L96
+	DW	.L97
+	DW	.L98
+	DW	.L99
+	DW	.L100
+	DW	.L101
+	DW	.L102
+	DW	.L103
+	DW	.L104
+	DW	.L105
+	DW	.L106
+	DW	.L107
+	DW	.L108
+	DW	.L109
+	DW	.L110
+	DW	.L111
+	DW	.L112
+	DW	.L113
+	DW	.L114
+	DW	.L115
+	DW	.L116
+	DW	.L117
+	DW	.L118
+	DW	.L119
+	DW	.L120
+	DW	.L121
+	DW	.L122
+	DW	.L123
+	DW	.L124
+	DW	.L125
+	DW	.L126
+	DW	.L127
+	DW	.L128
+	DW	.L129
+	DW	.L130
+	DW	.L131
+	DW	.L132
+	DW	.L133
+	DW	.L134
+	DW	.L135
+	DW	.L136
+	DW	.L137
+	DW	.L138
+	DW	.L139
+	DW	.L140
+	DW	.L141
+	DW	.L142
+	DW	.L143
+	DW	.L144
+	DW	.L145
+	DW	.L146
+	DW	.L147
+	DW	.L148
+	DW	.L149
+	DW	.L150
+	DW	.L151
+	DW	.L152
+	DW	.L153
+	DW	.L154
+	DW	.L155
+	DW	.L156
+	DW	.L157
+	DW	.L158
+	DW	.L159
+	DW	.L160
+	DW	.L161
+	DW	.L162
+	DW	.L163
+	DW	.L164
+	DW	.L165
+	DW	.L166
+	DW	.L167
+	DW	.L168
+	DW	.L169
+	DW	.L170
+	DW	.L171
+	DW	.L172
+	DW	.L173
+	DW	.L174
+	DW	.L175
+	DW	.L176
+	DW	.L177
+	DW	.L178
+	DW	.L179
+	DW	.L180
+	DW	.L181
+	DW	.L182
+	DW	.L183
+	DW	.L184
+	DW	.L185
+	DW	.L186
+	DW	.L187
+	DW	.L188
+	DW	.L189
+	DW	.L190
+	DW	.L191
+	DW	.L192
+	DW	.L193
+	DW	.L194
+	DW	.L195
+	DW	.L196
+	DW	.L197
+	DW	.L198
+	DW	.L199
+	DW	.L200
+.textbuf
+	DW	.L201
+.L202
+	BS	81
+.buf
+	DW	.L202
+.L203
+	BS	2
+.cc
+	DW	.L203
+.line
+	WS	1
+.cl
+	WS	1
+.kbd_cnt
+	WS	1
+.newfile
+	WS	1
+.eofflag
+	WS	1
+.fp
+	WS	1
+.translate
+	ENTRY	3
+	LDC	0
+	STL	1
+	POP
+	LDC	0
+	STL	2
+	POP
+.L204
+	LDP	1
+	LDL	2
+	LDB
+	ARG
+	CALLF	1,_isSpace
+	JF	.L205
+	LDL	2
+	LDC	1
+	ADD
+	STL	2
+	POP
+	JMP	.L204
+.L205
+.L206
+	LDP	1
+	LDL	2
+	LDB
+	ARG
+	CALLF	1,_isDigit
+	JF	.L207
+	LDP	1
+	LDL	2
+	LDB
+	LDC	65488
+	ADD
+	STL	3
+	POP
+	LDL	1
+	LDC	10
+	MUL
+	LDL	3
+	ADD
+	STL	1
+	POP
+	LDL	2
+	LDC	1
+	ADD
+	STL	2
+	POP
+	JMP	.L206
+.L207
+	LDL	1
+	MREG
+	RET
+.getLine
+	ENTRY	1
+	LDC	0
+	STG	.eofflag
+	POP
+	LDC	0
+	STG	.kbd_cnt
+	POP
+.L208
+	LDP	2
+	LDC	65535
+	ADD
+	LDG	.kbd_cnt
+	GT
+	JF	.L209
+	LDP	3
+	ARG
+	CALLF	1,_feof
+	STG	.eofflag
+	POP
+	LDG	.eofflag
+	LDC	1
+	EQ
+	JF	.L210
+	JMP	.L209
+.L210
+	LDP	3
+	ARG
+	CALLF	1,_fgetc
+	STL	1
+	POP
+	LDL	1
+	LDP	1
+	LDG	.kbd_cnt
+	STB
+	POP
+	LDL	1
+	LDC	10
+	EQ
+	JF	.L211
+	JMP	.L209
+.L211
+	LDG	.kbd_cnt
+	LDC	1
+	ADD
+	STG	.kbd_cnt
+	POP
+	JMP	.L208
+.L209
+	LDC	0
+	LDP	1
+	LDG	.kbd_cnt
+	STB
+	POP
+	RET
+.L212
+	STRING	"r"
+.L213
+	STRING	"%s is created.\n"
+.L214
+	STRING	"%s is loaded.\n"
+.loadFile
+	ENTRY	0
+	LDC	.L212
+	ARG
+	LDP	1
+	ARG
+	CALLF	2,_fopen
+	STG	.fp
+	POP
+	LDC	1
+	STG	.line
+	POP
+	LDC	1
+	STG	.cl
+	POP
+	LDG	.fp
+	LDC	0
+	EQ
+	JF	.L215
+	LDC	1
+	STG	.newfile
+	POP
+	LDP	1
+	ARG
+	LDC	.L213
+	ARG
+	CALLF	2,_printf
+	POP
+	JMP	.L216
+.L215
+	LDP	1
+	ARG
+	LDC	.L214
+	ARG
+	CALLF	2,_printf
+	POP
+	LDC	1
+	STG	.cl
+	POP
+.L217
+	LDG	.eofflag
+	LDC	1
+	NE
+	JF	.L218
+	LDG	.fp
+	ARG
+	LDC	81
+	ARG
+	LDG	.textbuf
+	LDG	.line
+	LDC	65535
+	ADD
+	LDW
+	ARG
+	CALLP	3,.getLine
+	LDG	.line
+	LDC	1
+	ADD
+	STG	.line
+	POP
+	LDG	.cl
+	LDC	1
+	ADD
+	STG	.cl
+	POP
+	JMP	.L217
+.L218
+	LDG	.line
+	LDC	65535
+	ADD
+	STG	.line
+	POP
+	LDG	.cl
+	LDC	65535
+	ADD
+	STG	.cl
+	POP
+.L216
+	RET
+.L219
+	STRING	"/****************************************************************/\n"
+.L220
+	STRING	"L%03d:"
+.L221
+	STRING	"%s\n"
+.L222
+	STRING	"/****************************************************************/\n"
+.printAll
+	ENTRY	1
+	LDC	.L219
+	ARG
+	CALLF	1,_printf
+	POP
+	LDC	1
+	STL	1
+	POP
+.L223
+	LDL	1
+	LDG	.line
+	LT
+	JF	.L224
+	LDL	1
+	ARG
+	LDC	.L220
+	ARG
+	CALLF	2,_printf
+	POP
+	LDG	.textbuf
+	LDL	1
+	LDC	65535
+	ADD
+	LDW
+	ARG
+	LDC	.L221
+	ARG
+	CALLF	2,_printf
+	POP
+	LDL	1
+	LDC	25
+	EQ
+	JT	.L225
+	LDL	1
+	LDC	50
+	EQ
+	JT	.L225
+	LDL	1
+	LDC	75
+	EQ
+	JT	.L225
+	LDL	1
+	LDC	100
+	EQ
+	JT	.L225
+	LDL	1
+	LDC	125
+	EQ
+	JT	.L225
+	LDL	1
+	LDC	150
+	EQ
+	JT	.L225
+	LDL	1
+	LDC	175
+	EQ
+	JF	.L226
+.L225
+.L227
+	LDG	_stdin
+	ARG
+	CALLF	1,_fgetc
+	POP
+	JMP	.L228
+.L228
+.L226
+	LDL	1
+	LDC	1
+	ADD
+	STL	1
+	POP
+	JMP	.L223
+.L224
+	LDC	.L222
+	ARG
+	CALLF	1,_printf
+	POP
+	RET
+.L229
+	STRING	"Teditor has these commands.\n"
+.L230
+	STRING	"i : insert words\n"
+.L231
+	STRING	"q : quit teditor\n"
+.L232
+	STRING	"j : jump to line which you select\n"
+.L233
+	STRING	"c : overrides the one line\n"
+.L234
+	STRING	"d : delete line\n"
+.L235
+	STRING	"p : print line\n"
+.L236
+	STRING	"print all : print all lines\n"
+.help
+	ENTRY	0
+	LDC	.L229
+	ARG
+	CALLF	1,_printf
+	POP
+	LDC	.L230
+	ARG
+	CALLF	1,_printf
+	POP
+	LDC	.L231
+	ARG
+	CALLF	1,_printf
+	POP
+	LDC	.L232
+	ARG
+	CALLF	1,_printf
+	POP
+	LDC	.L233
+	ARG
+	CALLF	1,_printf
+	POP
+	LDC	.L234
+	ARG
+	CALLF	1,_printf
+	POP
+	LDC	.L235
+	ARG
+	CALLF	1,_printf
+	POP
+	LDC	.L236
+	ARG
+	CALLF	1,_printf
+	POP
+	RET
+.L237
+	STRING	"Type new content.\n"
+.insert
+	ENTRY	1
+	LDG	.line
+	LDC	65535
+	ADD
+	STL	1
+	POP
+.L238
+	LDG	.cl
+	LDC	65535
+	ADD
+	LDL	1
+	LT
+	JF	.L239
+	LDG	.textbuf
+	LDL	1
+	LDC	65535
+	ADD
+	LDW
+	ARG
+	LDG	.textbuf
+	LDL	1
+	LDW
+	ARG
+	CALLF	2,_strCpy
+	POP
+	LDL	1
+	LDC	65535
+	ADD
+	STL	1
+	POP
+	JMP	.L238
+.L239
+	LDC	.L237
+	ARG
+	CALLF	1,_printf
+	POP
+	LDG	_stdin
+	ARG
+	LDC	81
+	ARG
+	LDG	.textbuf
+	LDG	.cl
+	LDC	65535
+	ADD
+	LDW
+	ARG
+	CALLP	3,.getLine
+	LDG	.line
+	LDC	1
+	ADD
+	STG	.line
+	POP
+	LDG	.cl
+	LDC	1
+	ADD
+	STG	.cl
+	POP
+	CALLP	0,.printAll
+	RET
+.L240
+	STRING	"w"
+.L241
+	STRING	"Can't save file!!"
+.L242
+	STRING	"%s\n"
+.L243
+	STRING	"Saved %s\n"
+.savefile
+	ENTRY	2
+	LDC	.L240
+	ARG
+	LDP	1
+	ARG
+	CALLF	2,_fopen
+	STL	2
+	POP
+	LDL	2
+	LDC	0
+	EQ
+	JF	.L244
+	LDC	.L241
+	ARG
+	CALLF	1,_printf
+	POP
+	JMP	.L245
+.L244
+	LDC	0
+	STL	1
+	POP
+.L246
+	LDG	.line
+	LDC	65535
+	ADD
+	LDL	1
+	GT
+	JF	.L247
+	LDG	.textbuf
+	LDL	1
+	LDW
+	ARG
+	LDC	.L242
+	ARG
+	LDL	2
+	ARG
+	CALLF	3,_fprintf
+	POP
+	LDL	1
+	LDC	1
+	ADD
+	STL	1
+	POP
+	JMP	.L246
+.L247
+	LDP	1
+	ARG
+	LDC	.L243
+	ARG
+	CALLF	2,_printf
+	POP
+	LDL	2
+	ARG
+	CALLF	1,_fclose
+	POP
+.L245
+	RET
+.L248
+	STRING	"Jump to?\n"
+.jump
+	ENTRY	1
+	LDC	9
+	ARG
+	CALLF	1,_malloc
+	STL	1
+	POP
+	LDC	.L248
+	ARG
+	CALLF	1,_printf
+	POP
+	LDG	_stdin
+	ARG
+	LDC	9
+	ARG
+	LDL	1
+	ARG
+	CALLP	3,.getLine
+	LDL	1
+	ARG
+	CALLF	1,.translate
+	STG	.cl
+	POP
+	LDG	.cl
+	LDC	0
+	LT
+	JF	.L249
+	LDC	1
+	STG	.cl
+	POP
+.L249
+	LDG	.cl
+	LDG	.line
+	GT
+	JF	.L250
+	LDG	.line
+	STG	.cl
+	POP
+.L250
+	LDL	1
+	ARG
+	CALLP	1,_free
+	RET
+.L251
+	STRING	"The current line is just after final line.\n"
+.delete
+	ENTRY	1
+	LDG	.cl
+	LDG	.line
+	NE
+	JF	.L252
+	LDG	.cl
+	STL	1
+	POP
+.L253
+	LDG	.line
+	LDC	65535
+	ADD
+	LDL	1
+	GE
+	JF	.L254
+	LDG	.textbuf
+	LDL	1
+	LDW
+	ARG
+	LDG	.textbuf
+	LDL	1
+	LDC	65535
+	ADD
+	LDW
+	ARG
+	CALLF	2,_strCpy
+	POP
+	LDL	1
+	LDC	1
+	ADD
+	STL	1
+	POP
+	JMP	.L253
+.L254
+	LDG	.line
+	LDC	65535
+	ADD
+	STG	.line
+	POP
+	CALLP	0,.printAll
+	JMP	.L255
+.L252
+	LDC	.L251
+	ARG
+	CALLF	1,_printf
+	POP
+.L255
+	RET
+.L256
+	STRING	"%s\n"
+.L257
+	STRING	"Type new content.\n"
+.L258
+	STRING	"nothing to change.\n"
+.change
+	ENTRY	0
+	LDG	.cl
+	LDG	.line
+	NE
+	JF	.L259
+	LDG	.textbuf
+	LDG	.cl
+	LDC	65535
+	ADD
+	LDW
+	ARG
+	LDC	.L256
+	ARG
+	CALLF	2,_printf
+	POP
+	LDC	.L257
+	ARG
+	CALLF	1,_printf
+	POP
+	LDG	_stdin
+	ARG
+	LDC	81
+	ARG
+	LDG	.textbuf
+	LDG	.cl
+	LDC	65535
+	ADD
+	LDW
+	ARG
+	CALLP	3,.getLine
+	JMP	.L260
+.L259
+	LDC	.L258
+	ARG
+	CALLF	1,_printf
+	POP
+.L260
+	RET
+.L261
+	STRING	"[%d] Please type command.\n"
+.L262
+	STRING	"i"
+.L263
+	STRING	"p"
+.L264
+	STRING	"h"
+.L265
+	STRING	"q"
+.L266
+	STRING	"j"
+.L267
+	STRING	"d"
+.L268
+	STRING	"c"
+.L269
+	STRING	"Unknown command\n"
+_main
+	ENTRY	1
+	LDC	9
+	ARG
+	CALLF	1,_malloc
+	STL	1
+	POP
+	LDP	2
+	LDC	1
+	LDW
+	ARG
+	CALLP	1,.loadFile
+.L270
+	LDG	.cl
+	ARG
+	LDC	.L261
+	ARG
+	CALLF	2,_printf
+	POP
+	LDG	_stdin
+	ARG
+	LDC	9
+	ARG
+	LDL	1
+	ARG
+	CALLP	3,.getLine
+	LDG	.eofflag
+	LDC	1
+	EQ
+	JF	.L271
+	JMP	.L272
+.L271
+	LDC	.L262
+	ARG
+	LDL	1
+	ARG
+	CALLF	2,_strCmp
+	LDC	0
+	EQ
+	JF	.L273
+	CALLP	0,.insert
+	JMP	.L274
+.L273
+	LDC	.L263
+	ARG
+	LDL	1
+	ARG
+	CALLF	2,_strCmp
+	LDC	0
+	EQ
+	JF	.L275
+	CALLP	0,.printAll
+	JMP	.L276
+.L275
+	LDC	.L264
+	ARG
+	LDL	1
+	ARG
+	CALLF	2,_strCmp
+	LDC	0
+	EQ
+	JT	.L277
+	LDL	1
+	LDC	0
+	LDB
+	LDC	0
+	EQ
+	JF	.L278
+.L277
+	CALLP	0,.help
+	JMP	.L279
+.L278
+	LDC	.L265
+	ARG
+	LDL	1
+	ARG
+	CALLF	2,_strCmp
+	LDC	0
+	EQ
+	JF	.L280
+	LDP	2
+	LDC	1
+	LDW
+	ARG
+	CALLP	1,.savefile
+	JMP	.L272
+.L280
+	LDC	.L266
+	ARG
+	LDL	1
+	ARG
+	CALLF	2,_strCmp
+	LDC	0
+	EQ
+	JF	.L281
+	CALLP	0,.jump
+	JMP	.L282
+.L281
+	LDC	.L267
+	ARG
+	LDL	1
+	ARG
+	CALLF	2,_strCmp
+	LDC	0
+	EQ
+	JF	.L283
+	CALLP	0,.delete
+	JMP	.L284
+.L283
+	LDC	.L268
+	ARG
+	LDL	1
+	ARG
+	CALLF	2,_strCmp
+	LDC	0
+	EQ
+	JF	.L285
+	CALLP	0,.change
+	JMP	.L286
+.L285
+	LDC	.L269
+	ARG
+	CALLF	1,_printf
+	POP
+.L286
+.L284
+.L282
+.L279
+.L276
+.L274
+	JMP	.L270
+.L272
+	CALLP	0,.printAll
+	LDC	0
+	MREG
+	RET
